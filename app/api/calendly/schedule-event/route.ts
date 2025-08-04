@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
     }
 
     const body: ScheduleEventRequest = await request.json();
-    const { date, time, invitee, description } = body;
+    const { date, time, invitee } = body;
 
     if (!date || !time || !invitee?.name || !invitee?.email) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
