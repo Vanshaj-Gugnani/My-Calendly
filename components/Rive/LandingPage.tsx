@@ -4,7 +4,7 @@ import BookMe from "../BookMe";
 
 export default function LandingVehicle() {
   const { RiveComponent: Animation } = useRive({
-    src: "/rive/black_left.riv",
+    src: "/black_left.riv",
     stateMachines: "State Machine 1",
     autoplay: true,
   });
